@@ -26,6 +26,10 @@ $router->group(
     $router->post('articles', ['uses' => 'ArticleController@create']);
     $router->delete('articles/{id}', ['uses' => 'ArticleController@delete']);
     $router->put('articles/{id}', ['uses' => 'ArticleController@update']);
+
+    // oxorder
+    $router->get('order', ['uses' => 'OrderController@showAllOrder']);
+    $router->get('order/{id}', ['uses' => 'OrderController@showOneOrder']);
 }
 );
 
