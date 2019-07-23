@@ -29,6 +29,7 @@ $router->group(
 
     // oxorder
     $router->get('order', ['uses' => 'OrderController@showAllOrder']);
+    $router->get('order/{id}', ['uses' => 'OrderController@showOneOrder']);
 }
 );
 
